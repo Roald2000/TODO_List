@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family   : Roboto, Poppins, serif, sans-serif;
+    transition    : .3s ease;
+    outline-offset: 3px;
+    box-sizing    : border-box;
+}
+
+dialog {
+    z-index      : 10;
+    margin-top   : 10px;
+    background   : white;
+    border       : none;
+    border-radius: 1rem;
+}
+
+dialog::backdrop {
+    background-color: hsl(250, 100%, 50%, 0.35);
+}
